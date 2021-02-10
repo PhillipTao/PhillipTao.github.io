@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      
+      *{
+        box-sizing: border-box;
+      }
+
+      @font-face{
+        font-family:'chalkborad';
+        src: url('chalkboard.tff');
+      }
+      
+      body{
+        
+        height: 100%;
+        width:1000px;
+        overflow-x:hidden;
+        overflow-y:scroll;
+        position: left;
+        margin:0;
+        padding:0;
+        resize:none;
+        
+      }
+      
+      .Cafe{
+        color:#000659;
+        font-size:32px;
+        text-align:center;
+        padding:5px;
+      }
+      
+      .topBck{
+        position:100px 100px;
+        
+        background-image:url("topbackground.jpg");
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+        background-position: 0px 30px;
+        
+        height:350px;
+        width: 750px;
+        margin-left:100px;
+        margin-top:30px;
+        
+        
+      }
+
+      .center{
+        
+        position: absolute;
+        width:100%;
+        top:300px;
+        left:325px;
+        font-size:38px;
+        color:#ffeac9;
+        
+      }
+    
+
+      .topnav{
+        
+        overflow:hidden;
+        background-color:#ffeac9;
+        padding-left:30px;
+
+      }
+
+      .topnav a{
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        color:#0c1cf2;
+        text-align: left;
+        padding:14px 0px 14px 10px;
+        text-decoration:none;
+      }
+
+      .midFont{
+        font-family:chalkboard;
+        font-size:26px;
+        color:#75038f;
+        text-align:center;
+        padding:10px;
+        text-decoration-line:underline;
+        text-decoration-style:double;
+
+      }
+      
+      .column{
+        
+        float:left;
+        width:50%;
+        padding:20px;
+        height:310px;
+        margin-bottom:50px;
+        
+      }
+
+      .columwhite{
+        width:100%;
+        height:50px;
+      }
+
+      .row:after{
+        display:table;
+        clear:both;
+      }
+      
+      
+      .reservation{
+        position: absolute;
+        width:150px;
+        top:450px;
+        left:600px;
+        text-align:center;
+        background-color: white;
+        color:black;
+        border: 1px double black;
+        font-size:11px;
+      }
+
+      .food{
+        font-size:20px;
+        color:#094785;
+      }
+
+      .align{
+        margin-top:100px;
+        
+      }
+      
+      .pinkbg{
+        border: 10px solid pink; 
+      }
+      .pinkbg img{ display:block;}
+
+      .bluebg{
+        border:10px solid skyblue 
+      }
+      .bluebg img{
+        display:block;
+      }
+
+      .imgbox{
+        position:center;
+        margin-left:20px;
+        margin-top:20px;
+        margin-bottom:20px;
+        
+        
+      }
+  
+
+    </style>
+  </head>
+  <body>
+
+    <div class="Cafe" id="home">
+      <p><b>Trojan Caf&#xe9</b><p>
+    </div>
+    
+    <div class="topnav">
+      <a href='HW3_Jun.html'>Home</a>
+      <a href='#italyfood'>Italian</a>
+      <a href='#indianfood'>Indian</a>
+      <a href='#japanfood'>Japanese</a>
+      <a href='#dissert'>Desserts</a>
+      <a href='welcome.html'>About</a>
+      <a href='welcome.html'>Contact</a>
+    </div>
+
+    <div class="topBck">
+    </div>
+
+    <div class="center">
+      <p>Enjoy the Scenic View!!</p>
+    </div>
+
+    <div class="reservation">
+      <button >Book Your Reservation</button>
+    </div>
+
+    <div class="midFont">
+      <p><b>Explore Our Delicious Cuisines</b></p>
+    </div>
+
+    <div class="row">
+
+      <div class="column" id="italyfood">
+          <div class="pinkbg">
+              <img src="italiancuisine.jpg" alt="image of italiancuisine" style="width:440px">
+          </div>
+      </div>
+      <div class="column">
+        <div class="align">
+        <p class="food" ><b>Italy's finest:</b></p>
+        <p>From our Lasagna to our Protein Penne, we have delicious options for every taste!</p>
+      </div>
+      </div>
+
+      <div class="column">
+        <div class="align">
+        <p class="food"><b>India's Flavors:</b></p>
+        <p>Our dishes are blended with masterful savory spices</p>
+        </div>
+      </div>
+      <div class="column" id="indianfood">
+        <div class="bluebg">
+          <img src="Indianfood.jpg" alt="image of indianfood" style="width:440px">
+        </div>
+      </div>
+
+      <div class="column" id="japanfood">
+        <div class="pinkbg">
+        <img src="Japanfood.jpg" alt="image of japan" style="width:440px">
+      </div>
+      </div>
+      <div class="column">
+        <div class="align">
+        <p class="food"><b>Japanese Cuisine:</b></p>
+        <p>Delicious dining options from Sake to Sushi</p>
+      </div>
+      </div>
+
+      <div class="column">
+        <div class="align">
+        <p class="food"><b>Desserts:</b></p>
+        <p>From Italian Tiramisu to Indian Gulab Jamun</p>
+      </div>
+      </div>
+      <div class="column" id="dissert">
+        <div class="bluebg">
+        <img src="Dissert.jpg" alt="image of indianfood" style="width:440px">
+      </div>
+      </div>
+
+    </div>
+    
+
+    
+
+  </body>
+  
+</html>
